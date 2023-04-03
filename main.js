@@ -56,7 +56,6 @@ function main() {
             data
           );
           system.addData(data, paths[0][paths[0].length - 1]);
-          system.addData(data, paths[0][paths[0].length - 1]);
           dataToPlace.delete(data);
         }
       }
@@ -67,13 +66,15 @@ function main() {
           for (let asker of system.listUser) {
             if (asker.id == wantedCountData[dataId][1][0]) {
               let path = system.dijkstra(asker.systemNodeAvailable, data);
-              console.log(path);
+              system.addData(data, path[path.length - 1]);
+              dataToPlace.delete(data);
             }
           }
         }
       }
     }
   }
+  console.log(system.listSystemNode);
 
   //test 2
   // const listData = [new Data(0, 40)];
