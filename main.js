@@ -40,6 +40,7 @@ function main() {
   }
   //Une fois le bilan effectué, je place enfin les données
   for (let dataId in wantedCountData) {
+    // cas où deux utilisateurs sont interessés
     if (wantedCountData[dataId][0] == 2) {
       let askers = [];
       for (let user of system.listUser) {
@@ -61,6 +62,7 @@ function main() {
       }
     }
     if (wantedCountData[dataId][0] == 1) {
+      //cas où un utilisateur veut la donné
       for (let data of system.listData) {
         if (data.id == wantedCountData[dataId][0]) {
           for (let asker of system.listUser) {
