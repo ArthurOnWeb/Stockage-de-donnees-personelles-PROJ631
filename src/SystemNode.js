@@ -1,6 +1,9 @@
 import { Data } from "./Data.js";
 import { Node } from "./Node.js";
 
+/**
+ * Nœud du système capable de stocker des données et relié à d'autres nœuds.
+ */
 export class SystemNode extends Node {
   constructor(
     id,

@@ -4,12 +4,12 @@ Ce projet implémente une simulation simplifiée de placement de données dans u
 
 ## Structure du code
 
-- `Data.js` – représentation d'une donnée (identifiant et taille)
-- `Node.js` – classe de base pour les nœuds
-- `SystemNode.js` – nœud du système contenant de la mémoire et les connexions vers d'autres nœuds
-- `User.js` – nœud utilisateur avec les données souhaitées
-- `System.js` – logique principale (tri des données, recherche du nœud libre le plus proche, algorithme de Dijkstra)
-- `main.js` – script d'exemple qui instancie les objets et lance l'algorithme
+- `src/Data.js` – représentation d'une donnée (identifiant et taille)
+- `src/Node.js` – classe de base pour les nœuds
+- `src/SystemNode.js` – nœud du système contenant de la mémoire et les connexions vers d'autres nœuds
+- `src/User.js` – nœud utilisateur avec les données souhaitées
+- `src/System.js` – logique principale (tri des données, recherche du nœud libre le plus proche, algorithme de Dijkstra)
+- `src/main.js` – script d'exemple qui instancie les objets et lance l'algorithme
 
 ## Prérequis
 
@@ -24,6 +24,12 @@ Aucune dépendance externe n'est requise : le dossier `node_modules` est vide.
 
 ```bash
 npm start
+```
+
+Pour lancer la suite de tests :
+
+```bash
+npm test
 ```
 
 Le programme affiche dans la console l'état final des nœuds système après placement des données.
