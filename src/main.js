@@ -1,3 +1,4 @@
+// Exemple de script utilisant le système de stockage
 import { System } from "./System.js";
 import { SystemNode } from "./SystemNode.js";
 import { User } from "./User.js";
