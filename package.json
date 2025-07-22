@@ -2,12 +2,12 @@
     "name": "stockage-donnes-personelles",
     "version": "1.0.0",
     "description": "Permet de représenter le stockage de données personnelles dans une structure de données",
-    "main": "src/main.js",
+    "main": "scripts/main.js",
     "type": "module",
     "scripts": {
-        "start": "node src/main.js",
+        "start": "node scripts/main.js",
         "test": "node --test"
     },
     "author": "Arthur Rattanavong",
-    "license": "ISC"
+    "license": "MIT"
 }

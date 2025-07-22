@@ -1,9 +1,9 @@
 // Exemple de script utilisant le système de stockage
-import { System } from "./System.js";
-import { SystemNode } from "./SystemNode.js";
-import { User } from "./User.js";
-import { Data } from "./Data.js";
-import { Node } from "./Node.js";
+import { System } from "../src/System.js";
+import { SystemNode } from "../src/SystemNode.js";
+import { User } from "../src/User.js";
+import { Data } from "../src/Data.js";
+import { Node } from "../src/Node.js";
 
 function main() {
   //code principal
