@@ -1,3 +1,6 @@
+/**
+ * Logique de placement des données dans le réseau.
+ */
 import { Data } from "./Data.js";
 import { User } from "./User.js";
 import { SystemNode } from "./SystemNode.js";
@@ -16,7 +19,7 @@ export class System {
     for (let h = 0; h < this.listData.length; h++) {
       let data = this.listData[h];
       //On parcourt la liste des utilisateurs
-      for (let i = 0; i < this.listeUser.length; i++) {
+      for (let i = 0; i < this.listUser.length; i++) {
         let utilisateurCourant = this.listUser[i];
         //on parcours la liste des données qui interessent l'utilisateur
         for (let j = 0; j < utilisateurCourant.dataListInterest.length; j++) {
